@@ -34,7 +34,7 @@ let formatter = DateFormatter()
 formatter.dateFormat = "MMM d, yyyy"
 print("Current Date is \(formatter.string(from: nsDate as Date))")
 var swiftDate : Date = nsDate as Date
-swiftDate = Calendar.current.date(byAdding: .day, value: 30, to: swiftDate)!
+swiftDate = Calendar.current.date(byAdding: .month, value: 1, to: swiftDate)!
 print("Date after 1 month is \(formatter.string(from: swiftDate as Date))")
 print()
 
@@ -61,8 +61,10 @@ print()
 
 //Date Manipulation
 print("<||  Date Manipulation  ||>")
+var todayDate : Date = Date()
 var dataFormatter = DateFormatter()
 dataFormatter.dateFormat = "MM/dd/yyyy"
+print("Formatted from today date  \(dataFormatter.string(from: todayDate as Date))")
 let dateString : String = "08/24/2024"
 print("Formatted from string : \(dateString) to date \(dataFormatter.date(from: dateString)!)")
 
