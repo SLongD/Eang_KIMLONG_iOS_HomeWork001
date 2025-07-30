@@ -54,9 +54,7 @@ var genreName : String = "Pop"
 let chekGenre : Bool = favoriteGenre.contains(genreName.capitalized)
 (chekGenre ? print("\(genreName.capitalized) is in the list") : print("\(genreName.capitalized) is not in the list"))
 var favoriteGenreArray : [String] = Array(favoriteGenre)
-for i in 0..<favoriteGenreArray.count {
-    print("Favorite Genre \(i+1) is \(favoriteGenreArray[i])")
-}
+print("Favorite Genre convert to Array is \(favoriteGenreArray)")
 print()
 
 //Date Manipulation
