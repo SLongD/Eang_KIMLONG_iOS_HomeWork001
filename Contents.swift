@@ -38,7 +38,7 @@ swiftDate = Calendar.current.date(byAdding: .day, value: 30, to: swiftDate)!
 print("Date after 1 month is \(formatter.string(from: swiftDate as Date))")
 print()
 
-//URL Handing
+//URL Handling
 print("<||  URL Handing  ||>")
 var url : URL = URL(string: "https://www.example.com")!
 print("URL is \(url)")
